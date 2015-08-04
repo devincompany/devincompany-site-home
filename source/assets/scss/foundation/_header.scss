@@ -1,0 +1,126 @@
+header {
+    overflow: hidden;
+    background-color: #ddd;
+    position: relative;
+    .fotos-without-animation {
+        position: relative;
+        z-index: 5;
+        background-size: 100% auto;
+        background-position: center 0;
+        background-repeat: no-repeat;
+        height: 500px;
+        opacity: 0.12;
+    }
+    .fotos {
+        position: relative;
+        z-index: 5;
+        background-size: 1800px 500px;
+        background-position: 0 0;
+        background-repeat: repeat-x;
+        width: 9000px;
+        height: 400px;
+        opacity: 0.08;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        transition: transform 300ms linear;
+        -webkit-animation: bgCover 1000s linear infinite;
+        -moz-animation: bgCover 1000s linear infinite;
+        -o-animation: bgCover 1000s linear infinite;
+        -ms-animation: bgCover 1000s linear infinite;
+        animation: bgCover 1000s linear infinite;
+    }
+    .infos {
+        top: 0;
+        z-index: 10;
+    }
+}
+.chamada-devincompany {
+    padding: 30px;
+    margin: 20px auto;
+    text-align: center;
+    h1 {
+        font-family: "Lato";
+        font-weight: 500;
+        font-size: 82px;
+        color: rgba(0,0,0,0.7);
+    }
+    p {
+        font-family: "Tahoma", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 36px;
+        color: rgba(0,0,0,0.7);
+        margin-bottom: 50px;
+        strong {
+            font-weight: bold;
+        }
+    }
+}
+.logo-header {
+    text-align: center;
+    width: 160px;
+    margin: 70px auto 0;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.desktop {
+    display: block;
+}
+.mobile {
+    display: none;
+}
+@include keyframe("bgCover") {
+    0% {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+    50% {
+        -webkit-transform: translate3d(-4500px,0,0);
+        transform: translate3d(-4500px,0,0);
+    }
+    100% {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .chamada-devincompany {
+        margin: 0 auto;
+    }
+    .chamada-devincompany p {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 640px) {
+    header .fotos {
+        height: 430px;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .logo-header {
+        width: 280px;
+        margin: 50px auto;
+    }
+    .buttons-cities {
+        position: relative;
+        margin-top: -235px;
+        z-index: 5;
+    }
+    .button-city {
+        float: none;
+        width: 95%;
+        margin: 0 auto 35px;
+        padding: 30px 0;
+        box-shadow: none;
+        &.last {
+            border: 0;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt_BR">
+<head>
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O Dev in Company surge para consolidar e suprir uma deficiência de comunicação entre empresas e profissionais do mercado, abrir portas para quem deseja levar conteúdo de qualidade para a comunidade e possibilitar uma maior interação e experiência entre os participantes, aumentando assim o network entre os presentes.">
+
+    <!-- TWITTER -->
+    <meta name="twitter:site" content="@devincompany">
+    <meta name="twitter:creator" content="@devincompany">
+    <!-- / TWITTER -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://devincompany.in/">
+    <meta property="og:title" content="Dev in Company">
+    <meta property="og:description" content="O Dev in Company surge para consolidar e suprir uma deficiência de comunicação entre empresas e profissionais do mercado, abrir portas para quem deseja levar conteúdo de qualidade para a comunidade e possibilitar uma maior interação e experiência entre os participantes, aumentando assim o network entre os presentes.">
+    <meta property="og:image" content="http://devincompany.in/{{devincompany.facebook_thumb}}">
+    <!-- / FACEBOOK -->
+
+    <title>Dev in Company</title>
+    <link rel="shortcut icon" href="http://devincompany.in/favicon.ico" type="image/x-icon">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/styles/main.css">
+
+</head>
+<body>
+    <div class="page-wrapper">
+
+    <header>
+        <div class="fotos" style="background-image: url('{{devincompany.banner}}');"></div>
+        <div class="wrapper pos-a section-center infos">
+            <figure class="logo-header" id="logo">
+                <img src="{{devincompany.logo}}" alt="Dev in Company">
+            </figure>
+            <div class="chamada-devincompany desktop">
+                <p>{{devincompany.about.text}}</span></p>
+            </div>
+        </div>
+    </header>
+
+    <div class="buttons-cities">
+        <a href="http://devincompany.in/belo-horizonte" class="button-city">Belo Horizonte</a>
+        <a href="http://devincompany.in/maceio" class="button-city last">Maceió</a>
+    </div>
+
+    <section id="organizacao">
+        <div class="wrapper section-center">
+            <h1>Organização</h1>
+            <ul class="staff-list">
+                {{#each organizers}}
+                <li><a target="_blank" href="{{contact}}"><img src="{{photo}}" alt="{{name}}"></a></li>
+                {{/each}}
+            </ul>
+        </div>
+    </section>
+
+    <footer class="socials">
+        <a target="_blank" href="{{devincompany.contacts.facebook}}" class="social">
+            <img src="assets/images/facebook.png" alt="">
+        </a><a target="_blank" href="{{devincompany.contacts.twitter}}" class="social">
+            <img src="assets/images/twitter.png" alt="">
+        </a>
+        <a href="mailto:{{devincompany.contacts.email}}" class="mail">{{devincompany.contacts.email}}</a>
+    </footer>
+    </div>
+
+    <!-- GOOGLE ANALYTICS -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '{{devincompany.ga}}']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <!-- /GOOGLE ANALYTICS -->
+</body>
+</html>

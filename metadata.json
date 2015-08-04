@@ -1,0 +1,38 @@
+{
+
+    "devincompany": {
+        "facebook_thumb": "assets/images/thumbnail-facebook.png",
+        "banner": "assets/images/cover.jpg",
+        "logo": "assets/images/logo.png",
+        "event_date": "Oct 31, 2015 09:00:00",
+        "global_infos": "Google • 32 de dezembro de 2015 • Belo Horizonte • Minas Gerais",
+        "about": {
+            "text": "O Dev in Company surge para consolidar e suprir uma deficiência de comunicação entre empresas e profissionais do mercado, abrir portas para quem deseja levar conteúdo de qualidade para a comunidade e possibilitar uma maior interação e experiência entre os participantes, aumentando assim o network entre os presentes."
+        },
+        "contacts": {
+            "facebook": "https://www.facebook.com/devincompany",
+            "twitter": "https://twitter.com/devincompany",
+            "email": "contato@devincompany.in"
+        },
+        "ga": "UA-43646069-1"
+    },
+
+    "organizers": [{
+        "name": "Staff Member",
+        "photo": "assets/images/staff/member.png",
+        "contact": "http://member.com"
+    }, {
+        "name": "Staff Member",
+        "photo": "assets/images/staff/member.png",
+        "contact": "http://member.com"
+    }, {
+        "name": "Staff Member",
+        "photo": "assets/images/staff/member.png",
+        "contact": "http://member.com"
+    }, {
+        "name": "Staff Member",
+        "photo": "assets/images/staff/member.png",
+        "contact": "http://member.com"
+    }]
+
+}

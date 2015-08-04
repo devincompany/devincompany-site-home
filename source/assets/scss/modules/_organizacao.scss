@@ -1,0 +1,33 @@
+#organizacao{
+    background-color: #292c33;
+    text-align: center;
+    padding-bottom: 50px;
+    h1{
+        color: #fff;
+        font-family: "Lato";
+        font-weight: 300;
+        text-align: center;
+        margin: 50px 35px;
+        font-size: 36px;
+        text-transform: uppercase;
+        display: block;
+    }
+    .staff-list{
+        display: block;
+        overflow: hidden;
+        text-align: center;
+        li{
+            margin:20px 15px;
+            display: inline-block;
+            width: 90px;
+            box-shadow: 0 0 20px 0px #000;
+        }
+        a{
+            display: block;
+        }
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+}

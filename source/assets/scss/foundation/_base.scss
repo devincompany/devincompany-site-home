@@ -1,0 +1,80 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+main, time{
+    display: block;
+}
+html{
+    background-color: #292c33;
+}
+.page-wrapper{
+    overflow: hidden;
+}
+.wrapper{
+    width: 960px;
+}
+.buttons-cities {
+    overflow: hidden;
+    background-color: #fff;
+}
+.button-city {
+    padding: 14px 26px;
+    line-height: 100%;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: 700;
+    display: block;
+    font-size: 26px;
+    background-color: rgba(251, 177, 52, 0.95);
+    text-decoration: none;
+    box-shadow: inset 0px -2px 0px 0px #e29003;
+    width: 50%;
+    float: left;
+    &.last {
+        border-left: 1px solid #e29003;
+    }
+    &:hover {
+        background-color: #fdc058;
+    }
+}
+.socials{
+    .social{
+        display: inline-block;
+        margin: 0 10px;
+        width: 35px;
+        text-decoration: none;
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .wrapper{
+        width: 740px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .wrapper{
+        width: 300px;
+    }
+    .buttons-cities {
+        background-color: transparent;
+    }
+}
+@media screen and (max-width: 640px) {
+    .wrapper{
+        width: auto;
+    }
+}
